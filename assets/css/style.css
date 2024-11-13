@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  color: hsl(0, 100%, 99%);
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+/* Estilos para el logo */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Efecto hover para los enlaces */
+.nav-links li a:hover {
+  color: #17660f;
+}
+
+section {
+  padding: 60px;
+}
+
+#about {
+  background-image: url(../imgs/Fondo.jpeg);
+  color: white;
+  background-size: cover;
+}
+
+#experience {
+  background-color: #ffffff;
+}
+#experience h1 {
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#education {
+  background-color: hsl(0, 0%, 100%);
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+}
+#education h1 {
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Posicion de los textos dentro dle header */
+header {
+  height: 30em;
+  padding: 3em;
+  font-size: 1.2em;
+  background-image: url(../imgs/lauren-mancke-aOC7TSLb1o8-edit.jpg);
+  color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  align-content: end;
+  text-shadow: 1px 2px 4px rgb(252, 252, 252);
+}
+header p {
+  width: 65%;
+  padding-top: 50px;
+}
+.education-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+/* Estilos para cada elemento de educación */
+.education-item {
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 230px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.education-item h2 {
+  color: #555;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.education-item p strong {
+  color: #333;
+}
+
+/* Estilos para las imágenes */
+.education-item img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  height: 3em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* Contenedor flex para organizar las tarjetas en fila */
+.experience-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada tarjeta de experiencia */
+.experience-item {
+  background-color: #f08aa818;
+  border: 1px solid #000000;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.experience-item .logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.experience-item h2 {
+  font-size: 1.5rem;
+  color: #312222;
+  margin: 0.5rem 0;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  color: #292222;
+  margin: 0.3rem 0;
+}
+
+.experience-item ul {
+  list-style: disc;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.experience-item li {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+#portfolio {
+  background-color: #f3e1b9;
+  padding: 1rem;
+  text-align: center;
+}
+
+#portfolio h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  background-color: white;
+}
+
+.carousel a img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.8s ease;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.carousel a:hover img {
+  transform: scale(1.05);
+}
+.description {
+  padding: 1em;
+}
+
+/* Portafolio exclusivamente */
+.portfolio-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.title-table {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  height: 2em;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 1rem;
+  border: 1px solid #6d6161;
+  text-align: center;
+  width: 50%;
+}
+
+.portfolio-table th {
+  background-color: #333;
+  color: white;
+  font-size: large;
+}
+
+.portfolio-table td img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.portfolio-table td img:hover {
+  transform: scale(1.05);
+}
+/* Estilo para el contenedor padre que rodea los elementos */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 0.5em;
+}
+
+.item {
+  color: #55555531;
+  padding-left: 0.8em;
+}
