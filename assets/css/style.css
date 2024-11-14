@@ -283,3 +283,8 @@ header p {
   color: #55555531;
   padding-left: 0.8em;
 }
+
+.nav-links a:hover { /*Hecho por Matías*/
+  color: navy; 
+  text-decoration: underline;
+}
